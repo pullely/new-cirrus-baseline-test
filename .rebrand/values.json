@@ -1,0 +1,11 @@
+{
+  "reponame": "new-cirrus-baseline-test",
+  "productname": "new-cirrus-baseline-test",
+  "productdomain": "new-cirrus-baseline-test.com",
+  "apibaseurl": "https://api.new-cirrus-baseline-test.com",
+  "subdomain": "rahulvarghesepullely",
+  "orunWorkspace": "org_7a41d69cc5f14a819aef08da19566cc2",
+  "githuborg": "pullely",
+  "epicSlug": "infra-baselining",
+  "domain": false
+}
