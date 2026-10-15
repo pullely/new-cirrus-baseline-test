@@ -91,4 +91,4 @@ spec:
     runtime: cloudflare
 
 # ci: re-trigger deploy (batch C — integrations + api-edge gateway, 20260622T141448Z)
-# orun: redeploy 04-workers as_41736b4a10ce4ede9868
+# orun: redeploy 05-edge as_41736b4a10ce4ede9868

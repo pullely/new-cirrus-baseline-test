@@ -39,9 +39,18 @@
         }
       ],
       "services": [
-        // @cycle-break:membership-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJuZXctY2lycnVzLWJhc2VsaW5lLXRlc3QtcG9saWN5LXdvcmtlci1zdGFnZSIKICAgICAgICB9LA==
-        // @cycle-break:membership-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAibmV3LWNpcnJ1cy1iYXNlbGluZS10ZXN0LWJpbGxpbmctd29ya2VyLXN0YWdlIgogICAgICAgIH0s
-        // @cycle-break:membership-worker->notifications-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTk9USUZJQ0FUSU9OU19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAibmV3LWNpcnJ1cy1iYXNlbGluZS10ZXN0LW5vdGlmaWNhdGlvbnMtd29ya2VyLXN0YWdlIgogICAgICAgIH0=
+        {
+          "binding": "POLICY_WORKER",
+          "service": "new-cirrus-baseline-test-policy-worker-stage"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "new-cirrus-baseline-test-billing-worker-stage"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "new-cirrus-baseline-test-notifications-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -59,9 +68,18 @@
         }
       ],
       "services": [
-        // @cycle-break:membership-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJuZXctY2lycnVzLWJhc2VsaW5lLXRlc3QtcG9saWN5LXdvcmtlci1wcm9kIgogICAgICAgIH0s
-        // @cycle-break:membership-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAibmV3LWNpcnJ1cy1iYXNlbGluZS10ZXN0LWJpbGxpbmctd29ya2VyLXByb2QiCiAgICAgICAgfSw=
-        // @cycle-break:membership-worker->notifications-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTk9USUZJQ0FUSU9OU19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAibmV3LWNpcnJ1cy1iYXNlbGluZS10ZXN0LW5vdGlmaWNhdGlvbnMtd29ya2VyLXByb2QiCiAgICAgICAgfQ==
+        {
+          "binding": "POLICY_WORKER",
+          "service": "new-cirrus-baseline-test-policy-worker-prod"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "new-cirrus-baseline-test-billing-worker-prod"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "new-cirrus-baseline-test-notifications-worker-prod"
+        }
       ]
     }
   }
